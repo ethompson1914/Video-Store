@@ -1,0 +1,28 @@
+﻿@model System.Collections.Generic.IEnumerable<Model.Movie>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Running time (minutes)</th>
+            <th>Rating</th>
+            <th>Star</th>
+            <th>More Details</th>
+        </tr>    
+    </thead>
+    
+    <tbody>
+    @foreach (var movie in @Model)
+    {
+        <tr>
+            <td>@movie.Title</td>
+            <td>@movie.Year</td>
+            <td>@movie.RunningTimeInMinutes</td>
+            <td>@movie.Rating</td>
+            <td>Todo</td>
+            <td>@Html.ActionLink("Click here", "MovieDetails", "Movies", new { Id = @movie.MovieId}, null)</td>
+        </tr>
+    }
+    </tbody>
+</table>

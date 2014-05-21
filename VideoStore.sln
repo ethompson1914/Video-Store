@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employee", "Employee\Employee.csproj", "{E2478A88-BB0F-45AD-97BC-802CFE5FF93B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations", "Migrations\Migrations.csproj", "{31297577-C8E3-43D6-ADB0-6FA20E69AB5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{CF18C407-D171-40CE-9C09-764D4ACD9D8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mappings", "Mappings\Mappings.csproj", "{45B217A1-F276-41F4-B8D8-2E1C0F7594A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{7A0A4927-F8EF-4EDA-A7F8-D3E96F87EDBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web Interface", "Web Interface\Web Interface.csproj", "{18057F9C-2687-41A4-934D-21FE373CCB98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{47DC5846-B280-4D58-8283-B54200F10F2C}"
+	ProjectSection(SolutionItems) = preProject
+		MigrateDown.bat = MigrateDown.bat
+		MigrateUp.bat = MigrateUp.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{6F587F34-1308-4639-8E6D-7FA15DCCB63B}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2478A88-BB0F-45AD-97BC-802CFE5FF93B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2478A88-BB0F-45AD-97BC-802CFE5FF93B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2478A88-BB0F-45AD-97BC-802CFE5FF93B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2478A88-BB0F-45AD-97BC-802CFE5FF93B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31297577-C8E3-43D6-ADB0-6FA20E69AB5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31297577-C8E3-43D6-ADB0-6FA20E69AB5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31297577-C8E3-43D6-ADB0-6FA20E69AB5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31297577-C8E3-43D6-ADB0-6FA20E69AB5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF18C407-D171-40CE-9C09-764D4ACD9D8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF18C407-D171-40CE-9C09-764D4ACD9D8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF18C407-D171-40CE-9C09-764D4ACD9D8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF18C407-D171-40CE-9C09-764D4ACD9D8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45B217A1-F276-41F4-B8D8-2E1C0F7594A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45B217A1-F276-41F4-B8D8-2E1C0F7594A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45B217A1-F276-41F4-B8D8-2E1C0F7594A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45B217A1-F276-41F4-B8D8-2E1C0F7594A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A0A4927-F8EF-4EDA-A7F8-D3E96F87EDBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A0A4927-F8EF-4EDA-A7F8-D3E96F87EDBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A0A4927-F8EF-4EDA-A7F8-D3E96F87EDBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A0A4927-F8EF-4EDA-A7F8-D3E96F87EDBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18057F9C-2687-41A4-934D-21FE373CCB98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18057F9C-2687-41A4-934D-21FE373CCB98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18057F9C-2687-41A4-934D-21FE373CCB98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18057F9C-2687-41A4-934D-21FE373CCB98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

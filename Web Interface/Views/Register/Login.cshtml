@@ -1,0 +1,28 @@
+﻿@model Web_Interface.Models.LoginInfo
+@{
+    ViewBag.Title = "Home Movie Night | Login";
+}
+
+<form class="form-horizontal" method="POST">
+    
+    @if (ViewBag.LoginError != null && ViewBag.LoginError == true)
+    {
+        <p class="field-validation-error">Incorrect email address or password</p>
+    }
+            
+    <div class="form-group">
+        @Html.LabelFor(x => x.EmailAddress, new {@class = "control-label col-md-2"})
+        <div class="col-md-4">
+            @Html.TextBoxFor(x => x.EmailAddress, new {type="email", @class = "form-control"})
+        </div>
+    </div>
+    
+    <div class="form-group">
+        @Html.LabelFor(x => x.Password, new {@class = "control-label col-md-2"})
+        <div class="col-md-4">
+            @Html.PasswordFor(x => x.Password, new {@class ="form-control"})
+        </div>
+    </div>
+    
+    <button type="submit" class="btn-primary btn">Login</button>
+</form>

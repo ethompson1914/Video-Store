@@ -1,0 +1,17 @@
+﻿@model Model.Customer
+
+@{
+
+    ViewBag.Title = "Home Movie Night | New account created";
+}
+
+<h2>Account creation successful!</h2>
+
+<p>
+    Your account has been created successfully.  You will need to log in with your email address (@Model.EmailAddress) and 
+    the password you just created.
+</p>
+
+<p>
+    @Html.ActionLink("Click here to log in", "Login")
+</p>

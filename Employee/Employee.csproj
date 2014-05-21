@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E2478A88-BB0F-45AD-97BC-802CFE5FF93B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Employee</RootNamespace>
+    <AssemblyName>Employee</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentMigrator">
+      <HintPath>..\packages\FluentMigrator.1.1.2.1\lib\35\FluentMigrator.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\packages\FluentNHibernate.1.4.0.0\lib\net35\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate.3.3.3.4001\lib\Net35\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="imdbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>imdbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewZipCodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewZipCodeForm.Designer.cs">
+      <DependentUpon>NewZipCodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RentalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentalForm.Designer.cs">
+      <DependentUpon>RentalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScanCustomerBarCodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanCustomerBarCodeForm.Designer.cs">
+      <DependentUpon>ScanCustomerBarCodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectCustomerForm.Designer.cs">
+      <DependentUpon>SelectCustomerForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewZipCodeForm.resx">
+      <DependentUpon>NewZipCodeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RentalForm.resx">
+      <DependentUpon>RentalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanCustomerBarCodeForm.resx">
+      <DependentUpon>ScanCustomerBarCodeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectCustomerForm.resx">
+      <DependentUpon>SelectCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Model.Customer.datasource" />
+    <None Include="Properties\DataSources\Model.Title.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ni0103-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="imdbDataSet.xsc">
+      <DependentUpon>imdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="imdbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>imdbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="imdbDataSet.xss">
+      <DependentUpon>imdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\searchIcon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mappings\Mappings.csproj">
+      <Project>{45b217a1-f276-41f4-b8d8-2e1c0f7594a1}</Project>
+      <Name>Mappings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{cf18c407-d171-40ce-9c09-764d4acd9d8f}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
